@@ -1,0 +1,174 @@
+* {
+    box-sizing:         border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+
+    margin: 0; /*to get rid of browsers applying margins by default (very silly)*/
+
+    font-family: 'Antic Didone', serif;
+}
+
+main {
+	box-shadow:         0 0 20px 10px #0d0d0d;
+	-webkit-box-shadow: 0 0 20px 10px #0d0d0d;
+	-moz-box-shadow:    0 0 20px 10px #0d0d0d;
+	-o-box-shadow:      0 0 20px 10px #0d0d0d;
+	margin: 20px auto 20px auto;
+	width: 60vw;
+	height: 84vw;
+	/* TODO: media queries */
+	background: #FFFFFF;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+body {
+	background: #262626 url("bg.png") fixed;
+}
+
+.container {
+}
+
+#character-name-area {
+	width: 30%;
+	height: 10%;
+}
+
+#character-details-container {
+	width: 60%;
+	height: 10%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#character-details-container div {
+	height: 50%;
+	width: 33.3%;
+}
+
+.body-column {
+	width: 30%;
+	height: 90%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+/* left column -------------------------------- */
+
+#skills-area {
+	height: 75%;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#ability-score-container {
+	height: 100%;
+	width: 30%;
+}
+
+#ability-score-container div {
+	height: 16.6%;
+}
+
+#inspiration {
+	height: 7.5%;
+	width: 70%;
+}
+
+#proficiency-bonus {
+	height: 7.5%;
+	width: 70%;
+}
+
+#saving-throws-container {
+	height: 20%;
+	width: 70%;
+}
+
+#skills-container {
+	height: 65%;
+	width: 70%;
+}
+
+#passive-perception {
+	height: 5%;
+}
+
+#proficiencies {
+	height: 20%;
+}
+
+/* middle column --------------------------- */
+
+#combat-stats-container {
+	height: 40%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#armour-class {
+	width: 33.3%;
+}
+
+#initiative {
+	width: 33.3%;
+}
+
+#speed {
+	width: 33.3%;
+}
+
+#hit-points {
+	width: 100%;
+}
+
+#temporary-hit-points {
+	width: 100%;
+}
+
+#hit-dice {
+	width: 50%;
+}
+
+#death-saves {
+	width: 50%;
+}
+
+#attacks {
+	height: 35%;
+}
+
+#equipment-container {
+	height: 25%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#money-area {
+	width: 25%;
+}
+
+#money-area div {
+	height: 20%;
+}
+
+#equipment {
+	width: 75%;
+}
+
+/* right column ---------------------------------- */
+
+#personality-area {
+	height: 40%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#personality-traits, #ideals, #bonds, #flaws {
+	height: 25%
+}
+
+#features {
+	height: 60%;
+}
