@@ -69,7 +69,7 @@ body {
 /* left column -------------------------------- */
 
 #skills-area {
-	height: 70%;
+	height: 71.67%;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
@@ -131,7 +131,7 @@ body {
 }
 
 #proficiencies {
-	height: 20%;
+	height: 18.33%;
 }
 
 /* middle column --------------------------- */
