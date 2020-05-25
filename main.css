@@ -35,8 +35,11 @@ body {
 	font-size: 0.8em;
 }
 
+.grey-text {
+	color: #aaaaaa
+}
+
 .container {
-	border: 1px solid black;
 	border-radius: 10px;
 	background-color: #f0f0f0;
 }
@@ -106,32 +109,96 @@ body {
 	z-index: 0;
 }
 
-#inspiration {
-	height: 7.5%;
+#inspiration-area, #proficiency-bonus-area {
+	height: 7%;
 	width: 60%;
+	padding: 3% 0;
 }
 
-#proficiency-bonus {
-	height: 7.5%;
-	width: 60%;
+#inspiration, #proficiency-bonus {
+	height: 100%;
+	width: 100%;
+	border: 2px black solid;
+	border-left: none;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+#inspiration-small, #proficiency-bonus-small {
+	height: 140%;
+	width: 35%;
+	border: 2px black solid;
+	border-radius: 10px;
+	background: white;
+}
+
+#inspiration .entry-title, #proficiency-bonus .entry-title {
+	margin: auto;
 }
 
 #saving-throws-area {
 	height: 20%;
 	width: 60%;
+	border: 2px black solid;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	padding: 2% 0;
 }
 
 #skills {
 	height: 60%;
 	width: 60%;
+	border: 2px black solid;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	padding: 2% 0;
+}
+
+#passive-perception-area {
+	height: 5%;
+	padding: 2% 0;
 }
 
 #passive-perception {
-	height: 5%;
+	height: 100%;
+	width: 100%;
+	border: 2px black solid;
+	border-left: none;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#passive-perception-small {
+	height: 140%;
+	width: 25%;
+	border: 2px black solid;
+	border-radius: 10px;
+	background: white;
+}
+
+#passive-perception .entry-title{
+	margin: auto;
 }
 
 #proficiencies {
 	height: 18.33%;
+	border: 2px black solid;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	padding: 2% 0;
 }
 
 /* middle column --------------------------- */
@@ -172,19 +239,41 @@ body {
 
 #attacks {
 	height: 30%;
+	border: 2px black solid;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	padding: 2% 0;
 }
 
 #equipment-area {
 	height: 25%;
+	border: 2px black solid;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	padding: 2% 0;
+}
+
+#equipment-money-splitter {
+	/*width: 100%;*/
+	height: 100%;
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: flex-start;
 }
 
 #money-area {
 	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
 }
 
-#money-area div {
+.money {
 	height: 20%;
 }
 
@@ -212,4 +301,10 @@ body {
 
 #features {
 	height: 56.75%;
+	border: 2px black solid;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	padding: 2% 0;
 }
