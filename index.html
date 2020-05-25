@@ -36,44 +36,59 @@
 		<div class="body-column">
 			<div id="skills-area">
 				<div class="container" id="ability-score-area">
+					<!-- TODO: limit input to numeric -->
 					<div class="ability-score" id="strength-score">
+						<input id="strength-modifier-entry" class="entry very-large-text" type="text" maxlength="3" readonly>
 						<p class="entry-title">Strength</p>
 						<div class="ability-score-small" id="strength-score-small">
+							<input id="strength-score-entry" class="entry large-text" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="dexterity-score">
+						<input id="dexterity-modifier-entry" class="entry very-large-text" type="text" maxlength="3" readonly>
 						<p class="entry-title">Dexterity</p>
 						<div class="ability-score-small" id="dexterity-score-small">
+							<input id="dexterity-score-entry" class="entry large-text" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="constitution-score">
+						<input id="constitution-modifier-entry" class="entry very-large-text" type="text" maxlength="3" readonly>
 						<p class="entry-title">Constitution</p>
 						<div class="ability-score-small" id="constitution-score-small">
+							<input id="constitution-score-entry" class="entry large-text" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="intelligence-score">
+						<input id="intelligence-modifier-entry" class="entry very-large-text" type="text" maxlength="3" readonly>
 						<p class="entry-title">Intelligence</p>
 						<div class="ability-score-small" id="intelligence-score-small">
+							<input id="intelligence-score-entry" class="entry large-text" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="wisdom-score">
+						<input id="wisdom-modifier-entry" class="entry very-large-text" type="text" maxlength="3">
 						<p class="entry-title">Wisdom</p>
 						<div class="ability-score-small" id="wisdom-score-small">
+							<input id="wisdom-score-entry" class="entry large-text" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="charisma-score">
+						<input id="charisma-modifier-entry" class="entry very-large-text" type="text" maxlength="3" readonly>
 						<p class="entry-title">Charisma</p>
 						<div class="ability-score-small" id="charisma-score-small">
+							<input id="charisma-score-entry" class="entry large-text" type="text" maxlength="2">
 						</div>
 					</div>
 				</div>
 				<div id="inspiration">
 					<div id="inspiration-small">
+						<input id="inspiration-entry" class="entry large-text" type="text" maxlength="2">
 					</div>
 					<p class="entry-title">Inspiration</p>
 				</div>
 				<div id="proficiency-bonus">
 					<div id="proficiency-bonus-small">
+						<input id="proficiency-bonus-entry" class="entry large-text" type="text" maxlength="1">
 					</div>
 					<p class="entry-title">Proficiency Bonus</p>
 				</div>
@@ -92,6 +107,7 @@
 			</div>
 			<div  id="passive-perception">
 				<div id="passive-perception-small">
+					<input id="passive-perception-entry" class="entry large-text" type="text" maxlength="2">
 				</div>
 				<p class="entry-title">Passive Wisdom (Perception)</p>
 			</div>
@@ -106,12 +122,15 @@
 			<div class="container" id="combat-stats-area">
 				<div id="combat-stats-top-row">
 					<div id="armour-class">
+						<input id="armour-class-entry" class="entry very-large-text" type="text" maxlength="2">
 						<p class="entry-title">Armour Class</p>
 					</div>
 					<div id="initiative">
+						<input id="initiative-entry" class="entry very-large-text" type="text" maxlength="1">
 						<p class="entry-title">Initiative</p>
 					</div>
 					<div id="speed">
+						<input id="speed-entry" class="entry very-large-text" type="text" maxlength="2">
 						<p class="entry-title">Speed</p>
 					</div>
 				</div>
@@ -189,16 +208,21 @@
 		</div>
 		<div class="body-column">
 			<div class="container" id="personality-area">
+				<!-- TODO: limit to number of chars that fit on actual character sheet -->
 				<div id="personality-traits">
+					<textarea id="personality-traits-entry" class="entry multi-line"></textarea>
 					<p class="entry-title">Personality traits</p>
 				</div>
 				<div id="ideals">
+					<textarea id="ideals-entry" class="entry multi-line"></textarea>
 					<p class="entry-title">Ideals</p>
 				</div>
 				<div id="bonds">
+					<textarea id="bonds-entry" class="entry multi-line"></textarea>
 					<p class="entry-title">Bonds</p>
 				</div>
 				<div id="flaws">
+					<textarea id="flaws-entry" class="entry multi-line"></textarea>
 					<p class="entry-title">Flaws</p>
 				</div>
 			</div>
