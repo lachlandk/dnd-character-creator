@@ -194,35 +194,40 @@ body {
 #combat-stats-area {
 	height: 40%;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 5%;
 }
 
-#armour-class {
-	width: 33.3%;
-}
-
-#initiative {
-	width: 33.3%;
-}
-
-#speed {
-	width: 33.3%;
-}
-
-#hit-points {
+#combat-stats-top-row, #combat-stats-bottom-row  {
 	width: 100%;
+	height: 17.5%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 
-#temporary-hit-points {
+#armour-class, #initiative, #speed {
+	width: 30%;
+	border: 2px black solid;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#hit-points, #temporary-hit-points {
 	width: 100%;
+	height: 22.5%;
+	border: 2px black solid;
+	border-radius: 10px;
+	background-color: white;
 }
 
-#hit-dice {
-	width: 50%;
-}
-
-#death-saves {
-	width: 50%;
+#hit-dice, #death-saves {
+	width: 47.5%;
+	border: 2px black solid;
+	border-radius: 10px;
+	background-color: white;
 }
 
 #attacks {
