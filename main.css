@@ -109,15 +109,9 @@ body {
 	z-index: 0;
 }
 
-#inspiration-area, #proficiency-bonus-area {
-	height: 7%;
-	width: 60%;
-	padding: 3% 0;
-}
-
 #inspiration, #proficiency-bonus {
-	height: 100%;
-	width: 100%;
+	height: 5%;
+	width: 60%;
 	border: 2px black solid;
 	border-left: none;
 	border-radius: 10px;
@@ -125,12 +119,11 @@ body {
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: center;
-
 }
 
 #inspiration-small, #proficiency-bonus-small {
-	height: 140%;
-	width: 35%;
+	height: 132%;
+	width: 34%;
 	border: 2px black solid;
 	border-radius: 10px;
 	background: white;
@@ -152,7 +145,7 @@ body {
 }
 
 #skills {
-	height: 60%;
+	height: 64%;
 	width: 60%;
 	border: 2px black solid;
 	border-radius: 10px;
@@ -162,13 +155,8 @@ body {
 	padding: 2% 0;
 }
 
-#passive-perception-area {
-	height: 5%;
-	padding: 2% 0;
-}
-
 #passive-perception {
-	height: 100%;
+	height: 3.5%;
 	width: 100%;
 	border: 2px black solid;
 	border-left: none;
@@ -181,7 +169,7 @@ body {
 
 #passive-perception-small {
 	height: 140%;
-	width: 25%;
+	width: 20%;
 	border: 2px black solid;
 	border-radius: 10px;
 	background: white;
@@ -192,7 +180,7 @@ body {
 }
 
 #proficiencies {
-	height: 18.33%;
+	height: 19.83%;
 	border: 2px black solid;
 	border-radius: 10px;
 	display: flex;
