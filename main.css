@@ -29,11 +29,19 @@ body {
 	background: #262626 url("background.png") fixed;
 }
 
+/* TODO: move components to separate file */
+
 .entry-title {
 	font-family: serif;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 0.8em;
+}
+
+.entry-subtitle {
+	font-family: sans-serif;
+	font-size: 0.8em;
+	margin: auto 0;
 }
 
 .grey-text {
@@ -126,7 +134,7 @@ body {
 
 /* left column -------------------------------- */
 
-#skills-area {
+#scores-area {
 	height: 71.67%;
 	display: flex;
 	flex-flow: column wrap;
@@ -203,7 +211,32 @@ body {
 	padding: 2% 0;
 }
 
-#skills {
+#saving-throws {
+	height: 85%;
+	padding-left: 5%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+
+.saving-throw-holder, .skill-holder {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.saving-throw-holder input, .saving-throw-holder p, .skill-holder input, .skill-holder p {
+	margin-left: 3%;
+}
+
+.saving-throw-holder .entry, .skill-holder .entry {
+	width: 2em;
+	border-bottom: 1px black solid;
+	border-radius: 0;
+	font-weight: bold;
+}
+
+#skills-area {
 	height: 64%;
 	width: 60%;
 	border: 2px black solid;
@@ -212,6 +245,14 @@ body {
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	padding: 2% 0;
+}
+
+#skills {
+	height: 95%;
+	padding-left: 5%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
 }
 
 #passive-perception {

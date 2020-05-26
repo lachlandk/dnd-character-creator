@@ -34,45 +34,45 @@
 			</div>
 		</div>
 		<div class="body-column">
-			<div id="skills-area">
+			<div id="scores-area">
 				<div class="container" id="ability-score-area">
 					<div class="ability-score" id="strength-score">
-						<input id="strength-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="3" readonly>
+						<input id="strength-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
 						<p class="entry-title">Strength</p>
 						<div class="ability-score-small" id="strength-score-small">
 							<input id="strength-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="dexterity-score">
-						<input id="dexterity-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="3" readonly>
+						<input id="dexterity-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
 						<p class="entry-title">Dexterity</p>
 						<div class="ability-score-small" id="dexterity-score-small">
 							<input id="dexterity-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="constitution-score">
-						<input id="constitution-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="3" readonly>
+						<input id="constitution-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
 						<p class="entry-title">Constitution</p>
 						<div class="ability-score-small" id="constitution-score-small">
 							<input id="constitution-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="intelligence-score">
-						<input id="intelligence-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="3" readonly>
+						<input id="intelligence-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
 						<p class="entry-title">Intelligence</p>
 						<div class="ability-score-small" id="intelligence-score-small">
 							<input id="intelligence-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="wisdom-score">
-						<input id="wisdom-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="3" readonly>
+						<input id="wisdom-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
 						<p class="entry-title">Wisdom</p>
 						<div class="ability-score-small" id="wisdom-score-small">
 							<input id="wisdom-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="charisma-score">
-						<input id="charisma-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="3" readonly>
+						<input id="charisma-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
 						<p class="entry-title">Charisma</p>
 						<div class="ability-score-small" id="charisma-score-small">
 							<input id="charisma-score-entry" class="entry large-text numeric" type="text" maxlength="2">
@@ -87,26 +87,164 @@
 				</div>
 				<div id="proficiency-bonus">
 					<div id="proficiency-bonus-small">
-						<input id="proficiency-bonus-entry" class="entry large-text numeric" type="text" maxlength="1">
+						<input id="proficiency-bonus-entry" class="entry large-text numeric" type="text">
 					</div>
 					<p class="entry-title">Proficiency Bonus</p>
 				</div>
 				<div id="saving-throws-area">
-					<div>
-
+					<div id="saving-throws">
+						<!-- TODO: style checkboxes to look like radio buttons -->
+						<!-- TODO: fix scaling issue with checkboxes-->
+						<div class="saving-throw-holder">
+							<input id=strength-proficiency-toggle" type="checkbox">
+							<input id="strength-saving-throw-entry" type="text" class="entry numeric" maxlength="2">
+							<p class="entry-subtitle">Strength</p>
+						</div>
+						<div class="saving-throw-holder">
+							<input id=dexterity-proficiency-toggle" type="checkbox">
+							<input id="dexterity-saving-throw-entry" type="text" class="entry numeric" maxlength="2">
+							<p class="entry-subtitle">Dexterity</p>
+						</div>
+						<div class="saving-throw-holder">
+							<input id=constitution-proficiency-toggle" type="checkbox">
+							<input id="constitution-saving-throw-entry" type="text" class="entry numeric" maxlength="2">
+							<p class="entry-subtitle">Constitution</p>
+						</div>
+						<div class="saving-throw-holder">
+							<input id=intelligence-proficiency-toggle" type="checkbox">
+							<input id="intelligence-saving-throw-entry" type="text" class="entry numeric" maxlength="2">
+							<p class="entry-subtitle">Intelligence</p>
+						</div>
+						<div class="saving-throw-holder">
+							<input id=wisdom-proficiency-toggle" type="checkbox">
+							<input id="wisdom-saving-throw-entry" type="text" class="entry numeric" maxlength="2">
+							<p class="entry-subtitle">Wisdom</p>
+						</div>
+						<div class="saving-throw-holder">
+							<input id=charisma-proficiency-toggle" type="checkbox">
+							<input id="charisma-saving-throw-entry" type="text" class="entry numeric" maxlength="2">
+							<p class="entry-subtitle">Charisma</p>
+						</div>
 					</div>
 					<p class="entry-title">Saving Throws</p>
 				</div>
-				<div id="skills">
-					<div>
-
+				<div id="skills-area">
+					<div id="skills">
+						<div class="skill-holder">
+							<input id="acrobatics-proficiency-toggle" type="checkbox">
+							<input id="acrobatics-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Acrobatics</p>
+							<p class="entry-subtitle grey-text">(Dex)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="animal-handling-proficiency-toggle" type="checkbox">
+							<input id="animal-handling-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Animal Handling</p>
+							<p class="entry-subtitle grey-text">(Wis)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="arcana-proficiency-toggle" type="checkbox">
+							<input id="arcana-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Arcana</p>
+							<p class="entry-subtitle grey-text">(Int)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="athletics-proficiency-toggle" type="checkbox">
+							<input id="athletics-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Athletics</p>
+							<p class="entry-subtitle grey-text">(Str)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="deception-proficiency-toggle" type="checkbox">
+							<input id="deception-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Deception</p>
+							<p class="entry-subtitle grey-text">(Cha)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="history-proficiency-toggle" type="checkbox">
+							<input id="history-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">History</p>
+							<p class="entry-subtitle grey-text">(Int)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="insight-proficiency-toggle" type="checkbox">
+							<input id="insight-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Insight</p>
+							<p class="entry-subtitle grey-text">(Wis)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="intimidation-proficiency-toggle" type="checkbox">
+							<input id="intimidation-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Intimidation</p>
+							<p class="entry-subtitle grey-text">(Cha)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="investigation-proficiency-toggle" type="checkbox">
+							<input id="investigation-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Investigation</p>
+							<p class="entry-subtitle grey-text">(Int)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="medicine-proficiency-toggle" type="checkbox">
+							<input id="medicine-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Medicine</p>
+							<p class="entry-subtitle grey-text">(Wis)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="nature-proficiency-toggle" type="checkbox">
+							<input id="nature-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Nature</p>
+							<p class="entry-subtitle grey-text">(Int)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="perception-proficiency-toggle" type="checkbox">
+							<input id="perception-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Perception</p>
+							<p class="entry-subtitle grey-text">(Wis)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="performance-proficiency-toggle" type="checkbox">
+							<input id="performance-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Performance</p>
+							<p class="entry-subtitle grey-text">(Cha)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="persuasion-proficiency-toggle" type="checkbox">
+							<input id="persuasion-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Persuasion</p>
+							<p class="entry-subtitle grey-text">(Cha)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="religion-proficiency-toggle" type="checkbox">
+							<input id="religion-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Religion</p>
+							<p class="entry-subtitle grey-text">(Int)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="sleight-of-hand-proficiency-toggle" type="checkbox">
+							<input id="sleight-of-hand-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Sleight of Hand</p>
+							<p class="entry-subtitle grey-text">(Dex)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="stealth-proficiency-toggle" type="checkbox">
+							<input id="stealth-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Stealth</p>
+							<p class="entry-subtitle grey-text">(Dex)</p>
+						</div>
+						<div class="skill-holder">
+							<input id="survival-proficiency-toggle" type="checkbox">
+							<input id="survival-score-entry" type="text" class="entry numeric">
+							<p class="entry-subtitle">Survival</p>
+							<p class="entry-subtitle grey-text">(Wis)</p>
+						</div>
 					</div>
 					<p class="entry-title">Skills</p>
 				</div>
 			</div>
 			<div  id="passive-perception">
 				<div id="passive-perception-small">
-					<input id="passive-perception-entry" class="entry large-text numeric" type="text" maxlength="2">
+					<input id="passive-perception-entry" class="entry large-text numeric" type="text">
 				</div>
 				<p class="entry-title">Passive Wisdom (Perception)</p>
 			</div>
@@ -121,15 +259,15 @@
 			<div class="container" id="combat-stats-area">
 				<div id="combat-stats-top-row">
 					<div id="armour-class">
-						<input id="armour-class-entry" class="entry very-large-text numeric" type="text" maxlength="2">
+						<input id="armour-class-entry" class="entry very-large-text numeric" type="text">
 						<p class="entry-title">Armour Class</p>
 					</div>
 					<div id="initiative">
-						<input id="initiative-entry" class="entry very-large-text numeric" type="text" maxlength="1">
+						<input id="initiative-entry" class="entry very-large-text numeric" type="text">
 						<p class="entry-title">Initiative</p>
 					</div>
 					<div id="speed">
-						<input id="speed-entry" class="entry very-large-text numeric" type="text" maxlength="2">
+						<input id="speed-entry" class="entry very-large-text numeric" type="text">
 						<p class="entry-title">Speed</p>
 					</div>
 				</div>
