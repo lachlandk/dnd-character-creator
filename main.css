@@ -385,6 +385,7 @@ body {
 
 #personality-traits, #ideals, #bonds, #flaws {
 	margin: 0 5%;
+	padding-bottom: 5%;
 	border: 2px black solid;
 	border-radius: 10px;
 	background-color: white;
@@ -393,7 +394,7 @@ body {
 
 #personality-traits .entry-title, #ideals .entry-title, #bonds .entry-title, #flaws .entry-title {
 	position: relative;
-	top: -20%;
+	top: -5%;
 }
 
 #features {
