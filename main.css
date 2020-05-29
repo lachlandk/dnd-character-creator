@@ -279,7 +279,7 @@ body {
 	margin: auto;
 }
 
-#proficiencies {
+#proficiencies-area {
 	height: 19.83%;
 	border: 2px black solid;
 	border-radius: 10px;
@@ -287,6 +287,33 @@ body {
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	padding: 2% 0;
+}
+
+#proficiencies {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+.proficiency-holder {
+	height: 33%;
+	margin: 1% 2% 0;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.proficiency-holder .entry {
+	background-color: #eeeeee;
+	height: 100%;
+}
+
+.proficiency-holder .entry-title {
+	position: relative;
+	top: -25%;
+	left: -2%;
+	text-align: right;
 }
 
 /* middle column --------------------------- */
