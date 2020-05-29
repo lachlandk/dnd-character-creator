@@ -362,13 +362,82 @@ body {
 	border: 2px black solid;
 	border-radius: 10px;
 	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2% 3%;
 }
 
-#hit-dice, #death-saves {
+#hit-points-maximum, #hit-dice-total {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+#hit-points-maximum .entry-subtitle, #hit-dice-total .entry-subtitle {
+	width: 65%;
+}
+
+#hit-points-maximum .entry {
+	text-align: left;
+	padding-left: 1%;
+}
+
+#hit-points-maximum-entry {
+	border-bottom: 1px #cccccc solid;
+	border-radius: 0;
+}
+
+#hit-dice {
 	width: 47.5%;
 	border: 2px black solid;
 	border-radius: 10px;
 	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2% 3%;
+}
+
+#hit-dice-total .entry {
+	text-align: left;
+	padding-left: 2%;
+	width: 75%;
+}
+
+#hit-dice-total-entry {
+	border-bottom: 1px #cccccc solid;
+	border-radius: 0;
+}
+
+#death-saves {
+	width: 47.5%;
+	border: 2px black solid;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 5% 3% 2% 3%;
+	justify-content: space-between;
+}
+
+.death-save-area {
+	font-size: 0.9em;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.death-save-area .entry-title {
+	text-align: right;
+	width: 50%;
+}
+
+.death-save-holder {
+	width: 45%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	height: 50%;
+	border-bottom: 3px black double;
 }
 
 #attacks {

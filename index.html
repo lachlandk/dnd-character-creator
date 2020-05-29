@@ -283,16 +283,43 @@
 					</div>
 				</div>
 				<div id="hit-points">
+					<div id="hit-points-maximum">
+						<p class="entry-subtitle grey-text">Hit Point Maximum</p>
+						<input id="hit-points-maximum-entry" class="entry numeric" type="text">
+					</div>
+					<input id="hit-points-entry" class="entry very-large-text numeric" type="text">
 					<p class="entry-title">Current Hit Points</p>
 				</div>
 				<div id="temporary-hit-points">
+					<input id="temporary-hit-points-entry" class="entry very-large-text numeric" type="text">
 					<p class="entry-title">Temporary Hit Points</p>
 				</div>
 				<div id="combat-stats-bottom-row">
 					<div id="hit-dice">
+						<div id="hit-dice-total">
+							<p class="entry-subtitle grey-text">Total</p>
+							<input id="hit-dice-total-entry" class="entry numeric" type="text">
+						</div>
+						<input id="hit-dice-entry" class="entry large-text" type="text">
 						<p class="entry-title">Hit Dice</p>
 					</div>
 					<div id="death-saves">
+						<div class="death-save-area">
+							<p class="entry-title">Successes</p>
+							<div id="death-save-successes" class="death-save-holder">
+								<input id="death-save-success-1" type="checkbox">
+								<input id="death-save-success-2" type="checkbox">
+								<input id="death-save-success-3" type="checkbox">
+							</div>
+						</div>
+						<div class="death-save-area">
+							<p class="entry-title">Failures</p>
+							<div id="death-save-failures" class="death-save-holder">
+								<input id="death-save-failure-1" type="checkbox">
+								<input id="death-save-failure-2" type="checkbox">
+								<input id="death-save-failure-3" type="checkbox">
+							</div>
+						</div>
 						<p class="entry-title">Death Saves</p>
 					</div>
 				</div>
