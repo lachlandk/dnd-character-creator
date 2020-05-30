@@ -176,9 +176,14 @@ body {
 	z-index: 0;
 }
 
-#inspiration, #proficiency-bonus {
+#inspiration-area, #proficiency-bonus-area {
 	height: 5%;
 	width: 60%;
+	margin: 2% 0;
+}
+
+#inspiration, #proficiency-bonus {
+	height: 100%;
 	border: 2px black solid;
 	border-left: none;
 	border-radius: 10px;
@@ -196,7 +201,7 @@ body {
 	background: white;
 }
 
-#inspiration .entry-title, #proficiency-bonus .entry-title {
+#inspiration-area .entry-title, #proficiency-bonus-area .entry-title {
 	margin: auto;
 }
 
@@ -379,6 +384,7 @@ body {
 
 #hit-points-maximum .entry {
 	text-align: left;
+	font-weight: bold;
 	padding-left: 1%;
 }
 
@@ -399,6 +405,7 @@ body {
 
 #hit-dice-total .entry {
 	text-align: left;
+	font-weight: bold;
 	padding-left: 2%;
 	width: 75%;
 }
