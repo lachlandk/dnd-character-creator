@@ -90,7 +90,7 @@ body {
 
 #character-name-area {
 	width: 30%;
-	height: 7.5%;
+	height: 10%;
 	margin: auto 0;
 	border: 2px black solid;
 	border-radius: 10px;
@@ -98,7 +98,17 @@ body {
 	padding: 1% 2%;
 }
 
+#character-name-area .entry {
+	text-align: left;
+	height: 2em;
+	border-top: 3px black double;
+	border-bottom: 3px black double;
+	border-radius: 0;
+	margin: auto;
+}
+
 #character-name-area .entry-title {
+	margin-top: 2%;
 	text-align: left;
 }
 
@@ -116,6 +126,15 @@ body {
 .character-detail {
 	height: 50%;
 	width: 33.3%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.character-detail .entry {
+	font-size: 1.2em;
+	text-align: left;
+	height: 1.6em;
 }
 
 .character-detail .entry-title {
