@@ -607,5 +607,40 @@ body {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
-	padding: 2% 0;
+	padding: 2% 2%;
 }
+
+#features .entry {
+	background-color: #eeeeee;
+}
+
+#features > div .entry-title {
+	position: relative;
+	left: -2%;
+	text-align: right;
+}
+
+#race-features {
+	height: 26%;
+}
+
+#race-features .entry-title {
+	top: -10%;
+}
+
+#class-features {
+	height: 50%;
+}
+
+#class-features .entry-title {
+	top: -5%;
+}
+
+#background-features {
+	height: 16%;
+}
+
+#background-features .entry-title {
+	top: -14%;
+}
+
