@@ -572,6 +572,9 @@ body {
 #equipment {
 	width: 70%;
 	margin-left: -10%;
+	padding-top: 1%;
+	padding-right: 2%;
+	padding-bottom: 5%;
 }
 
 /* right column ---------------------------------- */
