@@ -71,6 +71,11 @@ body {
 	border: none;
 	border-radius: 10px;
 	text-align: center;
+	transition: background-color 0.25s;
+}
+
+.entry:hover {
+	background-color: #e5e5e5 !important;
 }
 
 .multi-line {
@@ -662,4 +667,3 @@ body {
 #background-features .entry-title {
 	top: -14%;
 }
-
