@@ -29,6 +29,72 @@ body {
 	background: #262626 url("background.png") fixed;
 }
 
+#sidebar {
+	position: fixed;
+	top: 20vh;
+	left: -12vw;
+	height: 60vh;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	overflow: hidden;
+	transition: left 0.25s;
+	z-index: 2;
+}
+
+#sidebar-toggle {
+	cursor: pointer;
+	border-radius: 0 50% 50% 0;
+	text-align: right;
+	position: relative;
+	left: -1.25vw;
+	z-index: -1;
+	width: 2.5vw;
+	height: 2.5vw;
+}
+
+#sidebar-content {
+	height: 100%;
+	width: 12vw;
+	border: 2px #cccccc solid;
+	border-radius: 0 10px 10px 0;
+	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+
+#sidebar.active {
+	left: 0;
+}
+
+.sidebar-button:first-child {
+	border-top: none;
+	border-top-right-radius: 10px;
+}
+
+.sidebar-button:last-child {
+	border-bottom: none;
+	border-bottom-right-radius: 10px;
+}
+
+.sidebar-button {
+	flex-grow: 1;
+	font-size: 1.5em;
+	border-top: 1px #cccccc solid;
+	border-bottom: 1px #cccccc solid;
+	transition: background-color 0.25s;
+}
+
+.sidebar-button:hover {
+	background-color: #e5e5e5;
+}
+
+.sidebar-button:active {
+	background-color: #bbbbbb;
+	padding-left: 2px;
+}
+
 /* TODO: move components to separate file */
 
 .entry-title {

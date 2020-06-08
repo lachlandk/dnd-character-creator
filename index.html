@@ -7,6 +7,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Vollkorn:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="sidebar" class="active">
+		<section id="sidebar-content">
+			<div class="sidebar-button">New Character</div>
+			<div class="sidebar-button">Save Character</div>
+			<div class="sidebar-button">Download Character</div>
+			<div class="sidebar-button">Add Spell Sheet</div>
+			<div class="sidebar-button">Add Character Details Sheet</div>
+			<div class="sidebar-button">Zoom In</div>
+			<div class="sidebar-button">Zoom Out</div>
+			<div class="sidebar-button">Info</div>
+		</section>
+		<button id="sidebar-toggle">></button>
+	</div>
 	<main>
 		<div class="container" id="character-name-area">
 			<p id="title">Dungeons <b>&</b> Dragons Character Creator</p>
@@ -43,42 +56,42 @@
 			<div id="scores-area">
 				<div class="container" id="ability-score-area">
 					<div class="ability-score" id="strength-score">
-						<input id="strength-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
+						<input id="strength-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2">
 						<p class="entry-title">Strength</p>
 						<div class="ability-score-small" id="strength-score-small">
 							<input id="strength-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="dexterity-score">
-						<input id="dexterity-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
+						<input id="dexterity-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2">
 						<p class="entry-title">Dexterity</p>
 						<div class="ability-score-small" id="dexterity-score-small">
 							<input id="dexterity-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="constitution-score">
-						<input id="constitution-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
+						<input id="constitution-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2">
 						<p class="entry-title">Constitution</p>
 						<div class="ability-score-small" id="constitution-score-small">
 							<input id="constitution-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="intelligence-score">
-						<input id="intelligence-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
+						<input id="intelligence-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2">
 						<p class="entry-title">Intelligence</p>
 						<div class="ability-score-small" id="intelligence-score-small">
 							<input id="intelligence-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="wisdom-score">
-						<input id="wisdom-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
+						<input id="wisdom-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2">
 						<p class="entry-title">Wisdom</p>
 						<div class="ability-score-small" id="wisdom-score-small">
 							<input id="wisdom-score-entry" class="entry large-text numeric" type="text" maxlength="2">
 						</div>
 					</div>
 					<div class="ability-score" id="charisma-score">
-						<input id="charisma-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2" readonly>
+						<input id="charisma-modifier-entry" class="entry very-large-text numeric" type="text" maxlength="2">
 						<p class="entry-title">Charisma</p>
 						<div class="ability-score-small" id="charisma-score-small">
 							<input id="charisma-score-entry" class="entry large-text numeric" type="text" maxlength="2">
