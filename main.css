@@ -79,11 +79,14 @@ body {
 }
 
 .sidebar-button {
+	cursor: pointer;
 	flex-grow: 1;
-	font-size: 1.5em;
 	border-top: 1px #cccccc solid;
 	border-bottom: 1px #cccccc solid;
 	transition: background-color 0.25s;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
 }
 
 .sidebar-button:hover {
@@ -93,6 +96,11 @@ body {
 .sidebar-button:active {
 	background-color: #bbbbbb;
 	padding-left: 2px;
+}
+
+.sidebar-button-text {
+	font-size: 1em;
+	font-family: sans-serif;
 }
 
 /* TODO: move components to separate file */
