@@ -148,8 +148,16 @@ body {
 	transition: background-color 0.25s;
 }
 
+.grey-background {
+	background-color: #eeeeee;
+}
+
 .entry:hover {
 	background-color: #e5e5e5 !important;
+}
+
+.entry.grey-background:hover {
+	background-color: #e0e0e0 !important;
 }
 
 .multi-line {
@@ -338,6 +346,7 @@ body {
 	border-bottom: 1px black solid;
 	border-radius: 0;
 	font-weight: bold;
+	height: 1.75em;
 }
 
 #skills-area {
@@ -409,7 +418,6 @@ body {
 }
 
 .proficiency-holder .entry {
-	background-color: #eeeeee;
 	height: 100%;
 }
 
@@ -498,6 +506,7 @@ body {
 	text-align: left;
 	font-weight: bold;
 	padding-left: 1%;
+	height: 1.5em;
 }
 
 #hit-points-maximum-entry {
@@ -526,6 +535,7 @@ body {
 	font-weight: bold;
 	padding-left: 2%;
 	width: 75%;
+	height: 1.5em;
 }
 
 #hit-dice-total-entry {
@@ -606,7 +616,6 @@ body {
 }
 
 .weapon-row .entry {
-	background-color: #eeeeee;
 	text-align: left;
 	font-size: 1em;
 	border-radius: 5px;
@@ -620,7 +629,6 @@ body {
 }
 
 #other-weapons .entry {
-	background-color: #eeeeee;
 	height: 45%;
 }
 
@@ -694,10 +702,6 @@ body {
 	padding-bottom: 5%;
 }
 
-#equipment-entry {
-	background-color: #eeeeee;
-}
-
 /* right column ---------------------------------- */
 
 #personality-area {
@@ -730,10 +734,6 @@ body {
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	padding: 2% 2%;
-}
-
-#features .entry {
-	background-color: #eeeeee;
 }
 
 #features > div .entry-title {
