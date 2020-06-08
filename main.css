@@ -4,8 +4,6 @@
     -moz-box-sizing:    border-box;
 
     margin: 0; /*to get rid of browsers applying margins by default (very silly)*/
-
-    font-family: 'Antic Didone', serif;
 }
 
 main {
@@ -31,13 +29,12 @@ body {
 
 #sidebar {
 	position: fixed;
-	top: 20vh;
-	left: -12vw;
-	height: 60vh;
+	top: 15vh;
+	left: -250px;
+	height: 70vh;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	overflow: hidden;
 	transition: left 0.25s;
 	z-index: 2;
 }
@@ -47,42 +44,45 @@ body {
 	border-radius: 0 50% 50% 0;
 	text-align: right;
 	position: relative;
-	left: -2vw;
+	left: -40px;
 	z-index: -1;
-	width: 4vw;
-	height: 4vw;
-}
-
-#sidebar-content {
-	height: 100%;
-	width: 12vw;
-	border: 2px #cccccc solid;
-	border-radius: 0 10px 10px 0;
-	background-color: white;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
+	width: 80px;
+	height: 80px;
 }
 
 #sidebar.active {
 	left: 0;
 }
 
+#sidebar-content {
+	height: 100%;
+	width: 250px;
+	border: 2px #cccccc solid;
+	border-radius: 0 10px 10px 0;
+	background-color: white;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+}
+
+#sidebar-content hr {
+	margin: auto;
+	border: 1px #cccccc solid;
+	width: 90%;
+}
+
 .sidebar-button:first-child {
-	border-top: none;
 	border-top-right-radius: 10px;
 }
 
 .sidebar-button:last-child {
-	border-bottom: none;
 	border-bottom-right-radius: 10px;
 }
 
 .sidebar-button {
 	cursor: pointer;
 	flex-grow: 1;
-	border-top: 1px #cccccc solid;
-	border-bottom: 1px #cccccc solid;
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
 	transition: background-color 0.25s;
 	display: flex;
 	flex-flow: row nowrap;
