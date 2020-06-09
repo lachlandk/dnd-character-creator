@@ -13,11 +13,12 @@ document.getElementById("sidebar-toggle").addEventListener("click", function(){
 const tooltip = document.createElement("div");
 tooltip.style.display = "none";
 tooltip.style.position = "absolute";
+tooltip.style.zIndex = "10";
 tooltip.style.backgroundColor = "#eeeeee";
 tooltip.style.border = "2px black solid";
 tooltip.style.borderRadius = "10px";
 tooltip.style.padding = "1% 2%";
-tooltip.style.zIndex = "10";
+tooltip.style.fontFamily = "'Acme', sans-serif";
 document.body.appendChild(tooltip);
 
 document.querySelectorAll("[data-tooltip]").forEach(function(element){

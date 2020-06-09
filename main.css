@@ -100,7 +100,7 @@ body {
 
 .sidebar-button-text {
 	font-size: 1em;
-	font-family: sans-serif;
+	font-family: "Acme", sans-serif;
 }
 
 /* TODO: move components to separate file */
