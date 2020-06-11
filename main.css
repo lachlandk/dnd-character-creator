@@ -61,7 +61,7 @@ body {
 	border-radius: 0 10px 10px 0;
 	background-color: white;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	justify-content: space-around;
 }
 
