@@ -87,6 +87,7 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	padding-left: 5%;
 }
 
 .sidebar-button:hover {
@@ -98,7 +99,12 @@ body {
 	padding-left: 2px;
 }
 
+.sidebar-button img {
+	height: 1.5em;
+}
+
 .sidebar-button-text {
+	padding-left: 5%;
 	font-size: 1em;
 	font-family: "Acme", sans-serif;
 }

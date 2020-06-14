@@ -16,6 +16,8 @@ function CharacterProperty(htmlID, pdfID, pdfAppearanceData, autoUpdateFunction,
 		this.saveValue = saveFunction;
 	} else {
 		this.saveValue = function(pdf){
+			// TODO: bold text
+			// TODO: centered text
 			if (this.value){
 				pdf["/Root"]["/Pages"]["/Kids"][0]["/Annots"][this.pdfID]["/AP"] = {
 					"/N": {
