@@ -10,16 +10,16 @@
 <body>
 	<div id="sidebar" class="active">
 		<section id="sidebar-content">
-			<div class="sidebar-button" data-tooltip="Coming soon. Reset the character sheet completely and start over.">
+			<div class="sidebar-button" data-tooltip="Coming soon.">
 				<p class="sidebar-button-text">New Character</p>
 			</div><hr>
-			<div class="sidebar-button" data-tooltip="Coming soon. Download your completed character sheet.">
+			<div id="download-button" class="sidebar-button" data-tooltip="Download your completed character sheet.">
 				<p class="sidebar-button-text">Download Character</p>
 			</div><hr>
-			<div class="sidebar-button" data-tooltip="Coming soon. Save the current character sheet in the browser.">
+			<div class="sidebar-button" data-tooltip="Coming soon.">
 				<p class="sidebar-button-text">Save Character</p>
 			</div><hr>
-			<div class="sidebar-button" data-tooltip="Coming soon. Open a digital character sheet to edit it.">
+			<div class="sidebar-button" data-tooltip="Coming soon.">
 				<p class="sidebar-button-text">Load Character</p>
 			</div><hr>
 			<div class="sidebar-button" data-tooltip="Coming soon.">
@@ -485,8 +485,11 @@
 			</div>
 		</div>
 	</main>
-	<script type="application/javascript" src="components.js"></script>
+	<script type="application/javascript" src="src/components.js"></script>
 	<script type="application/javascript" src="vendor/jszip.js"></script>
-	<script type="application/javascript" src="functions.js"></script>
+	<script type="application/javascript" src="vendor/pdfassembler.js"></script>
+	<script type="application/javascript" src="vendor/filesaver.js"></script>
+	<script type="application/javascript" src="src/characterData.js"></script>
+	<script type="application/javascript" src="src/userFunctions.js"></script>
 </body>
 </html>
